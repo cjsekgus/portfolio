@@ -1,0 +1,274 @@
+@charset "utf-8";
+
+/* 💖header */
+header {
+    height: 100px;
+}
+
+header .inner {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .inner ul li {
+    display: inline-block;
+}
+
+header .inner nav ul li {
+    font-size: 20px;
+    margin: 0 35px;
+}
+
+header .inner .right_menu li:nth-child(1) {
+    margin-right: 20px;
+    
+}
+
+/* 💖 .main_visual */
+
+.main_visual {
+    width: calc(100% - 200px);
+    height: calc(100vh - 100px);
+    margin: 0 auto;
+}
+.main_visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 💖 .video */
+
+.video {
+    padding: 180px 0;
+}
+
+.video .tab_menu li {
+    display: inline-block;
+    color: #666;
+    margin-right: 20px;
+}
+
+.video .tab_menu li.on {
+    position: relative;
+    color: #333;
+}
+
+.video .tab_menu li.on::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #333;
+    display: block;
+    position: absolute;
+    top: -10;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.video .list {
+    padding-top: 100px;
+}
+
+.video .list .list_in {
+    display: none;
+}
+
+.video .list .list_in.on {
+    display: block;
+}
+
+.video .list .list_in .swiper-slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.video .list .list_in .swiper-slide .youtube_wrap {
+    width: 60%;
+}
+
+.video .list .list_in .swiper-slide .youtube_wrap .youtube {
+    width: 100%;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+
+.video .list .list_in .swiper-slide .youtube_wrap .youtube iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+} /* 유튜브 비율조정하는 공식 */
+
+.video .list .list_in .swiper-slide .info {
+    width: 40%;
+    padding-left: 50px;
+}
+
+.video .list .list_in .swiper-slide .info h4 {
+    font-size: 25px;   
+}
+
+.video .list .list_in .swiper-slide .info p {
+    margin: 10px 0 20px;
+    border-bottom: 1px solid #999;
+    padding-bottom: 20px;
+}
+
+.video .list .list_in .swiper-slide .info dl {
+    display: flex;
+    margin-bottom: 20px; 
+    line-height: 1.5;
+}
+
+.video .list .list_in .swiper-slide .info dl dt {
+    width: 90px;
+    font-weight: bold;
+}
+
+.video .list .list_in .swiper-slide .info dl dd {
+    width: 440px;
+   
+}
+
+.video .list .list_in .swiper-slide .info .btn {
+    margin-top: 120px;
+}
+
+.video .list .list_in .swiper-slide .info .btn li:nth-child(1) {
+    font-weight: bold;
+    background-color: yellow;
+    color: red;
+
+}
+.video .list .list_in .swiper-slide .info .btn li:nth-child(2) {
+    font-weight: bold;
+    background-color: rgb(200, 255, 1);
+    color: red;
+
+}
+
+/* 💖슬라이드 버튼, 페이징 위치 변경 */
+.video .list {
+    position: relative;
+}
+.video .swiper {
+    position: static;
+}
+.video .swiper-button-next {
+    top: 0;
+    right: auto;
+    left: 10px;
+    margin-top: 25px;
+    margin-left: 60px;
+}
+.video .swiper-button-prev {
+    top: 0;
+    left: 0px;
+    margin-top: 25px;
+}
+.video .swiper-pagination {
+    bottom: auto;
+    top: 0;
+    width: auto;
+    margin: 37px 30px;
+}
+
+/* .web */
+
+.web {
+    padding: 180px 0;
+    background-color: antiquewhite;
+}
+
+.web .title {
+    text-align: center;
+}
+
+.web .list {
+    display: flex;
+    justify-content: center; 
+  }
+
+.web .list .item {
+    width: calc(100% / 3 - 15px);
+    margin: 0 7px;
+}
+
+.web .list .item figure {
+    width: 100%;
+    height: 370px;
+}
+
+.web .list .item figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.web .list .item .info {
+    background-color: #fff;
+    padding: 40px;
+}
+
+.web .list .item .info h4 {
+    font-size: 25px;
+}
+
+.web .list .item .info p {
+    font-size: 14px;
+    line-height: 1.3;
+    margin: 8px 0 20px;
+}
+
+.web .list .item .info dl {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.web .list .item .info dl dt {
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.web .list .item .info .btn {
+    margin-top: 40px;
+}
+
+/* 💖 graphic */
+
+.graphic {
+    padding: 180px 0;
+}
+
+.graphic .title {
+    text-align: center;
+}
+
+.graphic .list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.graphic .list .item {
+    width: calc( 100% / 4 - 15px);
+    margin-bottom: 30px;
+}
+
+.graphic .list .item a img {
+    height: 340px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.graphic .list .item .info h4 {
+    margin: 15px 0 10px;
+    font-size: 25px;
+}
